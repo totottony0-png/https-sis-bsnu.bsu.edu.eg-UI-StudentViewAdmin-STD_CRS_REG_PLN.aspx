@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths t-chrome t-chrome142">
+<head id="ctl00_Head1">
+    <base href="https://sis-bsnu.bsu.edu.eg/UI/StudentViewAdmin/">
+    <link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_3-tZwj7">
+    <link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_4-tZwj7">
+    <link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_2-tZwj7">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="University Management Information System UMIS">
+    
+    <style>
+        .searchPnl_ { min-height: 70px !important; }
+        .schedulepnl .table_AlternatingRow td { border-width: 1px; border-style: solid; border-color: #888888 !important; padding: 10px; }
+        .schedulepnl .table_Row td { padding: 10px; border-width: 1px; border-style: solid; border-color: #888888 !important; }
+        .schedulepnl .table_AlternatingRow { background-color: rgba(228, 231, 228, 0.24); }
+        .schedulepnl .table_Header th { padding: 10px; border: 1px solid #888888; }
+        .TermsPanel { min-height: 120px !important; }
+        .Search { width: 55%; font-size: 16px; padding: 5px 20px 5px 40px; border: 1px solid #ddd; margin: 8px; }
+    </style>
+
+<link href="../../App_Themes/AutoComplete.css" rel="stylesheet" type="text/css">
+    <link id="ctl00_Link1" href="../../App_Themes/style1.css" rel="stylesheet" type="text/css">
+    <link href="../../Style/JQuery/msgBoxLight.css" rel="stylesheet" type="text/css">
+    <link href="../../App_Themes/ui-progress-bar.css" rel="stylesheet" type="text/css">
+    <link href="../../Style/JQuery/jquery-ui-1.10.4.custom.css" rel="stylesheet">
+    <link href="../../App_Themes/telerikstyles.css" rel="stylesheet" type="text/css">
+    <link href="../../App_Themes/NewTheme_1_En/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="../../App_Themes/NewTheme_1_En/lotus.css" type="text/css" rel="stylesheet">
+    <link href="../../App_Themes/NewTheme_1_En/style.css" type="text/css" rel="stylesheet">
+    <link href="/UI/ImageUploader/css/imageuploader.css" type="text/css" rel="stylesheet">
+
+    <title>Student View</title>
+</head>
+<body style="">    
+    <form name="aspnetForm" method="post" action="./STD_CRS_REG_PLN.aspx" id="aspnetForm">
+        <div>
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+            <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+        </div>
+
+        <div id="ctl00_ASPxPopupControl1_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;"></div>
+
+        <div id="wrapper">
+            <div id="left-menu" class="MenuHide">
+                <div id="scrollbar_menu_left">
+                    <div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <div id="menu_left">
+                                <div id="accordion-example" data-collapse="accordion"></div>
+                                <input name="ctl00$txtSearch" type="text" id="ctl00_txtSearch" class="Search" placeholder="Go">
+                                <nav>
+                                    <ul id="nav">
+                                        <li><a class="nav_MNU" href="#">»&nbsp; Viewing</a><ul><li><a class="nav_URL" href="#">»&nbsp; Student Schedule</a></li></ul></li>
+                                        <li><a class="nav_MNU" href="#">»&nbsp; Academic Affairs</a><ul><li><a class="nav_URL" href="#">»&nbsp; Student Course Attendance</a></li><li><a class="nav_URL" href="#">»&nbsp; Register/Add/Drop Course</a></li><li><a class="nav_URL" href="#">»&nbsp; Semester Activity Marks</a></li><li><a class="nav_URL" href="#">»&nbsp; Student Result</a></li></ul></li>
+                                        <li><a class="nav_MNU" href="#">»&nbsp; My E-Services</a><ul><li><a class="nav_URL" href="#">»&nbsp; Inbox</a></li><li><a class="nav_URL" href="#">»&nbsp; Course Survey</a></li></ul></li>
+                                        <li><a class="nav_MNU" href="#">»&nbsp; My Requests</a><ul><li><a class="nav_URL" href="#">»&nbsp; Online Payment</a></li></ul></li>
+                                        <li><a class="nav_MNU" href="#">»&nbsp; Reports</a><ul><li><a class="nav_URL" href="#">»&nbsp; Exam Schedule</a></li></ul></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-wrapper">
+                <div id="top_header">
+                    <div class="holder">
+<div id="logo_text">
+                            <div id="logo">
+                                <img src="../../images/logo_Pages.png" id="ctl00_univImg">
+                            </div>
+                            
+                            <!--logo-->
+                            <div id="namelogo">
+                                
+                            </div>
+                            <!--namelogo-->
+                        </div>
+                        <div id="welcome">
+                            <div id="name_welcome">
+                                <p>&nbsp;|&nbsp;Student View</p>
+                                <p>&nbsp;<span id="ctl00_lblUser" title="220100239"><span style="font-size:9px">مينا ايهاب عدلي اسكندر</span></span></p>
+                                <h2><span id="ctl00_lblWelcome">Welcome</span></h2>
+                            </div>
+                            <div class="logo_Text">Faculty of Computer and Information Sciences</div>
+                            <div id="admin">
+                                <p><span id="ctl00_lblAdmYear">2025/2026</span>&nbsp; - &nbsp;<span id="ctl00_lblAdmSem">First</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="all_menu">
+                    <div class="holder">
+                        <div class="menu_master_icons">
+                            <ul class="all_master_icons">
+                                <li class="image_menu"><a href="#" id="menu" class="ico fl"><img src="../../images/menu.png" id="ctl00_Img9"></a></li>
+                                <li class="home_title_page"><span id="ctl00_lblPageTitle">Register/Add/Drop Course</span></li>
+                                <li><div id="ctl00_news" class="Ticker" style="display:none;"><ul id="newsTicker" class="Ticker"><li><a href="#">SIS - University of Bahrain</a></li></ul></div></li>
+                                <li class="master_icons"><div id="language"><a id="ctl00_lnkLogout" href="#"><img src="../../images/out.png" id="ctl00_Img6" title="Log Out"></a></div></li>
+                                <li class="master_icons"><div id="Div4"><a id="ctl00_lnkChngPSW" href="#"><img src="../../images/Key.png" id="ctl00_Img8" title="Change password"></a></div></li>
+                                <li class="master_icons"><div id=""><a id="" href=""><img src="" id="" title=""></a></div></li>
+                                <li class="master_icons"><div id="Div3"><a id="ctl00_lnkAr" class="Link" href="#"><img src="../../images/arabic.png" id="ctl00_Img4" title="عربي"></a></div></li>
+                                <li class="master_icons"><div id="Div2"><a id="ctl00_lnkEn" class="Link" href="#"><img src="../../images/engilsh.png" id="ctl00_Img5" title="English"></a></div></li>
+                                <li class="master_icons"><div id="Div1"><a id="ctl00_lnkHome" href="#"><img src="../../images/home.png" id="ctl00_Img1" title="Home Page"></a></div></li>
+                            </ul>
+                        </div>
+                        <div id="Div300" style="float: left; display: inline-block;"></div>
+                    </div>
+                </div>
+
+                <div id="all_content">
+                    <div class="holder">
+                        <div id="all_info">
+                            <div id="scroll_all_info">
+                                <div id="scrollbar_all_info">
+                                    <div id="ctl00_cntphmaster_updPnlStudSrch">
+                                        <br>
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnchkconfirm" id="ctl00_cntphmaster_hdnchkconfirm">
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnRegMthdFlg" id="ctl00_cntphmaster_hdnRegMthdFlg" value="0">
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnRegNextSem" id="ctl00_cntphmaster_hdnRegNextSem" value="0">
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnstudRegNextSemFlg" id="ctl00_cntphmaster_hdnstudRegNextSemFlg" value="0">
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnNextSemId" id="ctl00_cntphmaster_hdnNextSemId" value="0">
+                                        <input type="hidden" name="ctl00$cntphmaster$hdnNextYearId" id="ctl00_cntphmaster_hdnNextYearId" value="0">
+                                    </div>
+                                    
+                                    <br>
+                                    <div id="ctl00_cntphmaster_updPnlStudCourseReg">
+                                        <div id="ctl00_cntphmaster_pnlStudCourseRegSections" style="width:100%;">
+                                            <br>
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <style type="text/css">
+                                                                .style3 { width: 14%; }
+                                                                .style4 { width: 12%; }
+                                                                #Panel1 { min-height: 90px !important; }
+                                                            </style>
+                                                            <div id="ctl00_cntphmaster_ucStudDataGeneralControl_Panel1" class="all_details" style="min-height: 90px">
+                                                                <span class="title_all_details">
+                                                                    <img id="ctl00_cntphmaster_ucStudDataGeneralControl_Image1" src="../../Images/green_balls.png" style="border-width:0px;">
+                                                                    <span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblHeader">Student Data</span>
+                                                                </span>
+                                                                <br>
+                                                                <table class="all_grid_form">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblStudNaame" style="font-weight:bold;">Student Name</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp;</strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblStud">مينا ايهاب عدلي اسكندر</span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblStudCodeName" style="font-weight:bold;">Student ID</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><a id="ctl00_cntphmaster_ucStudDataGeneralControl_lnkStudCode" class="Link" href="#">220100239</a></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblFacultyName" style="font-weight:bold;">Faculty</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblFaculty">Faculty of Computer and Information Sciences</span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblScDegreeName" style="font-weight:bold;">Degree</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblScDegree">B.Sc.</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblMajiorName" style="font-weight:bold;">Student Major</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblMajior">Artificial Intelligence and Data Science</span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_LblLvlName" style="font-weight:bold;">Level</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_LblLvl">Level 3</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatusname" style="font-weight:bold;">Enrollment Status</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatus">Enrolled</span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatusName" style="font-weight:bold;">Academic Status</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatus">--</span></td>
+                                                                        </tr>
+                                                                        <tr id="ctl00_cntphmaster_ucStudDataGeneralControl_tr_Pass_GPA">
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_Label2" style="font-weight:bold;">Total Passed CH</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblTotPassedCh" style="color:Black;font-weight:bold;">100.00</span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_Label5" style="font-weight:bold;">CGPA</span></td>
+                                                                            <td class="input_normal"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lbLCGPA" style="color:Black;font-weight:bold;">2.06</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatusname" style="font-weight:bold;"></span></td>
+                                                                            <td class="input_normal"><strong>&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatus"></span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatusName" style="font-weight:bold;"></span></td>
+                                                                            <td class="input_normal"><strong>&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatus"></span></td>
+                                                                        </tr>
+                                                                                                                                                <tr>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatusname" style="font-weight:bold;"></span></td>
+                                                                            <td class="input_normal"><strong>&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblEnrollStatus"></span></td>
+                                                                            <td class="all_grid_form_name"><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatusName" style="font-weight:bold;"></span></td>
+                                                                            <td class="input_normal"><strong>&nbsp; </strong><span id="ctl00_cntphmaster_ucStudDataGeneralControl_lblAcadmicStatus"></span></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan="4">
+                                                            <style type="text/css">
+                                                                .style1 { width: 50%; height: 23px; }
+                                                                .style3 { width: 13%; height: 23px; }
+                                                                .style10 { width: 12%; }
+                                                                .style11 { width: 13%; }
+                                                            </style>
+                                                            <div id="ctl00_cntphmaster_ucStudAcademicLoad_rpnlStudAcadLoad" class="all_details">
+                                                                <span class="title_all_details">
+                                                                    <img id="ctl00_cntphmaster_ucStudAcademicLoad_Image1" src="../../Images/green_balls.png" style="border-width:0px;">
+                                                                    <span id="ctl00_cntphmaster_ucStudAcademicLoad_Label1">Academic Data</span>
+                                                                </span>
+                                                                <table width="100%">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="style11"><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblStudAcadLoadName" style="display:inline-block;font-weight:bold;width:144px;">Academic Load</span></td>
+                                                                            <td colspan="2"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblStudAcadLoad" style="color:Black;width:400px;font-size: 13px;">(CH From 9 To 18)</span></td>
+                                                                        </tr>
+                                                                        <tr id="ctl00_cntphmaster_ucStudAcademicLoad_trRegApproved">
+                                                                            <td class="style11"><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblRegApprovedName" style="display:inline-block;font-weight:bold;width:144px;">Reg. Approved</span></td>
+                                                                            <td colspan="2"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblRegApproved" style="display:inline-block;width:400px;">No</span></td>
+                                                                        </tr>
+                                                                        <tr id="ctl00_cntphmaster_ucStudAcademicLoad_trReg">
+                                                                            <td class="style3"><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblRegHrsName" style="display:inline-block;font-weight:bold;width:144px;">Registered CH</span></td>
+                                                                            <td colspan="2"><strong>:&nbsp; </strong><span id="ctl00_cntphmaster_ucStudAcademicLoad_lblRegHrs" style="display:inline-block;width:400px;">18</span></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th colspan="3">
+                                                                                <div id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_container">
+                                                                                    <table style="direction:inherit">
+                                                                                        <tbody><tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="https://sis-bsnu.bsu.edu.eg/Images/info.png" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info">The registered courses are within academic load</span></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                                                                                                                <tr>
+                                                                                            <td valign="top"><img id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_imgconfirm" src="" style="border-width:0px;"></td>
+                                                                                            <td><span id="ctl00_cntphmaster_ucStudAcademicLoad_ConfirmUserControl1_lblmessage" class="message_info"></span></td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </th>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            </td>
+                                                    </tr>
+                                                    <tr id="ctl00_cntphmaster_activestud">
+                                                        <td>
+                                                            <img id="ctl00_cntphmaster_ImgAdd" src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;">
+                                                            <a id="ctl00_cntphmaster_lnkAddNewReg" class="Link" href="#">Add New Registration</a>
+                                                        </td>
+                                                        <td id="ctl00_cntphmaster_TdAddRepeatCourse"><div></div></td>
+                                                        <td><div></div></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                            <br>
+                                            <div id="ctl00_cntphmaster_ucRegisteredCourses_rpnlStudAcadLoad" class="all_details">
+                                                <span class="title_all_details">
+                                                    <img id="ctl00_cntphmaster_ucRegisteredCourses_Image1" src="../../Images/green_balls.png" style="border-width:0px;">
+                                                    <span id="ctl00_cntphmaster_ucRegisteredCourses_Label1">Registered Courses</span>
+                                                </span>
+                                                <br><br>
+                                                <div>
+                                                    <table class="table table-flush table-striped table-sm align-middle table-hover table-row-bordered table-sm table-striped gy-2 gs-3" cellspacing="0" rules="all" border="1" id="ctl00_cntphmaster_ucRegisteredCourses_grdStudRegCourses" style="width:100%;border-collapse:collapse;">
+                                                        <tbody>
+                                                            <tr class="border-gray-200 fs-6 fw-bold bg-dark h-30px">
+                                                                <th scope="col">[Select]</th><th scope="col">Course Code</th><th scope="col">Course Title</th><th scope="col">CH</th><th scope="col">Repeat</th><th scope="col">Status</th><th scope="col">Fee Amount</th><th scope="col">Payment</th><th scope="col">Teaching Method</th><th scope="col">Delete Section</th><th scope="col">Section</th><th scope="col">Notes</th><th scope="col">Time Table</th><th scope="col">&nbsp;</th><th scope="col">&nbsp;</th>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">Lab441</a></td>
+                                                                <td align="center">Artificial Intelligent Lab</td>
+                                                                <td align="center">2.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">UAAI4106</a></td>
+                                                                <td align="center">Forecasting and Predictive Analytics</td>
+                                                                <td align="center">3.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">UAAI4205</a></td>
+                                                                <td align="center">Web & Social Media Analytics</td>
+                                                                <td align="center">3.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">UAAIEE19</a></td>
+                                                                <td align="center">Information Retrieval</td>
+                                                                <td align="center">2.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">UAAIEE23</a></td>
+                                                                <td align="center">Business Intelligence</td>
+                                                                <td align="center">2.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                            <tr class="table_Row fs-6 text-gray-700" style="background-color:#FDFF8F;">
+                                                                <td align="center"><input type="checkbox"></td>
+                                                                <td align="center"><a class="Link" href="#">UCAI4260</a></td>
+                                                                <td align="center">Capstone Project</td>
+                                                                <td align="center">6.00</td>
+                                                                <td align="center">0</td>
+                                                                <td align="center">A</td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><span style="color:Green;">Yes</span></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"></td>
+                                                                <td align="center"><img src="../../Images/ADD%20ICON.bmp" align="absmiddle" style="width:20px;border-width:0px;"> <a class="Link" href="#">Add Section</a></td>
+                                                                <td align="center"><input type="image" src="../../Images/deleteicon.jpg" style="border-width:0px;"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <br>
+                                                <div id="ctl00_cntphmaster_ucRegisteredCourses_divFooterButtons" style="width: 100%" align="center">
+                                                    &nbsp;
+                                                    <input type="submit" name="ctl00$cntphmaster$ucRegisteredCourses$btnDropCourse" value="Drop Course" id="ctl00_cntphmaster_ucRegisteredCourses_btnDropCourse" class="btn btn-primary" style="direction:ltr">
+                                                    &nbsp;
+                                                    <input type="submit" name="ctl00$cntphmaster$ucRegisteredCourses$btnWithdrawCourse" value="Withdraw Course" id="ctl00_cntphmaster_ucRegisteredCourses_btnWithdrawCourse" class="btn btn-primary">
+                                                    &nbsp;
+                                                </div>
+                                                <br>
+                                            </div>
+
+                                            <div id="ctl00_cntphmaster_Panel1"></div>
+                                            <div class="center_button">
+                                                <input type="submit" name="ctl00$cntphmaster$PrintSemreg" value="Student Registration Form" id="ctl00_cntphmaster_PrintSemreg" class="btn btn-primary">
+                                                <input type="submit" name="ctl00$cntphmaster$Print" value="Print Schedule" id="ctl00_cntphmaster_Print" class="btn btn-primary">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
